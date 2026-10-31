@@ -1,5 +1,18 @@
 # Overview
+使用 GitHub Actions 自动构建（无 Mac 电脑的最优解）
+如果你有 GitHub 账号，可以让云端服务器帮你从苹果官方服务器下载并制作可引导镜像，完美避开所有转换的坑。
 
+Fork 项目：登录 GitHub，找到 macos-iso-builder 项目，点击 Fork 按钮将其复制到你的仓库。
+
+启用 Actions：在你自己 Fork 的仓库页面，点击 Actions 选项卡，然后点击绿色的 "I understand my workflows, go ahead and enable them" 按钮。
+
+运行工作流：在左侧选择 Recovery ISO（推荐，文件小，速度快）或 Full Installer（完整安装包，体积大）。
+
+配置并运行：点击 Run workflow，在弹出的菜单中选择你需要的 macOS 版本，并将 Image format 设置为 iso，最后点击绿色的 Run workflow 按钮开始构建。
+
+下载成品：等待几分钟到几十分钟（取决于你选择的版本），构建完成后，在页面底部的 Artifacts 区域，点击下载生成的 .iso 文件即可。
+
+备选项目：如果 macos-iso-builder 构建失败，可以尝试另一个项目 macos26-iso-builder，操作方式类似。
 Build bootable macOS installer ISOs and DMGs directly from Apple's servers — no Mac required.
 
 This project has two parts:
